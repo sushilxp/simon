@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  height: 100vh;
+  margin: 0;
+}
+
+#level-title {
+  font-family: 'Bungee', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+    text-shadow: 0 2px 0 black, 0 0 10px cyan;
+}
+
+.container {
+  display: block;  
+  width: 500px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.btn {
+  display: inline-block;
+  border: 10px solid white;
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+
+}
+
+.red {
+  background-color: red;
+  border-radius: 0 100%  0 0;
+  border-left: 10px solid #800000;
+  border-bottom: 10px solid #800000;
+  box-shadow: 0 0 10px red;
+  
+}
+
+.green {
+  background-color: green;
+  border-right: 10px solid #004c00;
+  border-bottom: 10px solid #004c00;
+  border-radius: 300px 20px 20px 20px;
+  box-shadow: 0 0 10px greenyellow;
+}
+
+.blue {
+  background-color: blue;
+  border-left: 10px solid #000080;
+  border-top: 10px solid #000080;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0 0 10px blue;
+}
+
+.yellow {
+  background-color: yellow;
+  border-radius: 0 0 0 100%;
+  border-top: 10px solid #808000;
+  border-right: 10px solid #808000;
+  box-shadow: 0 0 10px yellow;
+}
+
+.simon {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Bungee', cursive;
+  box-shadow: 0 0 10px greenyellow;
+  
+}
+
+.btn:active {
+  box-shadow: 0 0 20px black;
+  transform: scale(0.9);
+  transition: all 0.1s ease;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
